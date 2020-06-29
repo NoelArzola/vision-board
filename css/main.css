@@ -1,3 +1,93 @@
 body {
+  background-color: #E8E8E8;
+  font-family: 'Montserrat';
   font-size: 20px;
+  text-transform: uppercase;
 }
+
+strong {
+  font-size: 38px;
+  text-transform: none;
+}
+
+#vision-board {
+  background-image: url("../img/background.png");
+  display: grid;
+  grid-template-areas:
+    'top-left top-mid top-right'
+    'mid-left mid mid-right'
+    'bottom-left bottom-mid bottom-right';
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 200px 400px 200px ;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.block {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.block-one,
+.block-three,
+.block-seven,
+.block-nine {
+  background-color: #ffffff;
+}
+
+.block-one {
+  grid-area: top-left;
+}
+
+.block-two {
+  grid-area: top-mid;
+  text-align: center;
+}
+
+.block-three {
+  grid-area: top-right;
+  text-align: center;
+  
+}
+
+.block-four {
+  grid-area: mid-left;
+}
+
+.center {
+  background-color: #3B3B3B;
+  color: #ffffff;
+  font-size: 30px;
+  grid-area: mid;
+  text-align: center;
+}
+
+.block-six {
+  grid-area: mid-right;
+  text-align: right;
+}
+
+.block-seven {
+  grid-area: bottom-left;
+  text-align: center;
+}
+
+.block-eight {
+  grid-area: bottom-mid;
+  text-align: center;
+}
+
+.block-nine {
+  grid-area: bottom-right;
+  text-align: right;
+}
+
+.highlighted-text {
+  background-color: #FFF44F;
+  font-family: 'Permanent Marker';
+}
+
+.title {
+  font-family: 'Permanent Marker';
+}
+
