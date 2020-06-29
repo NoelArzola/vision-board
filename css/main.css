@@ -18,14 +18,16 @@ strong {
     'mid-left mid mid-right'
     'bottom-left bottom-mid bottom-right';
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 200px 400px 200px ;
+  grid-template-rows: 200px 350px 200px ;
   margin: 0 auto;
   width: 1200px;
 }
 
 .block {
   box-sizing: border-box;
-  padding: 20px;
+  display: block;
+  padding: 25px;
+  align-content: center;
 }
 
 .block-one,
@@ -46,6 +48,7 @@ strong {
 
 .block-three {
   grid-area: top-right;
+  padding-top: 50px;
   text-align: center;
   
 }
@@ -69,6 +72,7 @@ strong {
 
 .block-seven {
   grid-area: bottom-left;
+  padding-top: 40px;
   text-align: center;
 }
 
